@@ -1,0 +1,48 @@
+{
+  "expo": {
+    "name": "Study Reminders",
+    "slug": "study-reminders",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.studyreminders.app"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#07140d",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "package": "com.studyreminders.app",
+      "permissions": [
+        "SCHEDULE_EXACT_ALARM",
+        "POST_NOTIFICATIONS",
+        "VIBRATE"
+      ],
+      "versionCode": 1
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-image",
+      [
+        "expo-notifications",
+        {}
+      ],
+      "expo-document-picker",
+      "expo-font"
+    ],
+    "backgroundColor": "#07140d",
+    "extra": {
+      "eas": {
+        "projectId": "f61e3e77-26cd-4c68-b175-99e27ad2c130"
+      }
+    },
+    "owner": "codecratman02"
+  }
+}
